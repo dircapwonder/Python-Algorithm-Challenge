@@ -21,15 +21,15 @@ When you are done, the program will show you the results for each test individua
 The program will return -1 for that test result.
 Here is an example:
 
-3
+3 /
 2
--98 97
+-98 97 /
 4
-99 45 -34 -76
+99 45 -34 -76 /
 3
-86 54
-92236816
-34698512
+86 54 /
+92236816 - 
+34698512 - 
 -1
 
 This was a challenge for my algorithm skill. I applied because I wanted to test myself; I didn't expect or want to be hired. I don't want this algorithm structure to disappear, even though they rejected me.
