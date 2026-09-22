@@ -1,4 +1,4 @@
-# admissionchallenge
+#Algorithm Challenge
 This is an admission challenge for a company. They rejected me, but the challenge was fun, and I want to add it to my repository. 
 
 How it works:
