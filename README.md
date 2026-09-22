@@ -36,5 +36,5 @@ Here is an example:
 When you enter numbers, the program will ignore the positive numbers and raise the negative numbers to the fourth power. If there are multiple negative numbers, the program will add them to the total. 
 
 
-This was a challenge for my algorithm skill. I applied because I wanted to test myself; I didn't expect or want to be hired. I don't want this algorithm structure to disappear, even though they rejected me.
+This was a challenge for my algorithm skill. I applied because I wanted to test myself; I didn't want or expect to be hired by this company. I don't want this algorithm structure to disappear, even though they rejected me.
 I didn't use lists, tuples, dictionaries, global variables, or AI.
