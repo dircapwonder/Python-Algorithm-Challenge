@@ -1,40 +1,127 @@
-#Algorithm Challenge
-This is an admission challenge for a company. They rejected me, but the challenge was fun, and I want to add it to my repository. 
+# Algorithm Challenge
 
-How it works:
+A small algorithm challenge I completed as part of a company admission process.
 
-1-)
-Enter how many tests you want to do. If you want to do 3 tests, just enter '3'. The max limit is 100.
+Although I wasn't accepted, I enjoyed solving the challenge and wanted to keep the algorithm and the experience in my GitHub repository rather than letting the work disappear.
 
-2-)
-Enter how many numbers you want to add for your first test. If you want to add 4 numbers, just enter '4'. The max limit is 100.
+# Challenge Description
+The program processes multiple independent tests.
 
-3-)
-Enter numbers between -100 and 100. For example, if you entered '4' in the previous step, enter the four numbers with a space in between. 
-Let's say you need to enter '99 45 -34 -76' if you write '4'. 
+## 1. Enter the number of tests
+First, enter how many tests you want to run.
 
-4-)
-Repeat steps 2 and 3 until you reach your total test number you entered in the first step.
-
-5-)
-When you are done, the program will show you the results for each test individually. If your total numbers in step three don't equal the number you entered in step two
-The program will return -1 for that test result.
-
-Here is an example:
-
-3 /
-2
--98 97 /
-4
-99 45 -34 -76 /
+For example:
+```
 3
-86 54 /
-92236816 - 
-34698512 - 
+```
+>[!NOTE]
+>The maximum number of tests is 100.
+
+## 2. Enter the number of numbers for each test
+For each test, enter how many numbers will be provided.
+
+For example:
+```
+4
+```
+>[!NOTE]
+>The maximum number of numbers in a test is 100.
+
+## 3. Enter the numbers
+Enter the specified amount of numbers, separated by spaces.
+
+For example:
+```
+99 45 -34 -76
+```
+>[!NOTE]
+>The accepted range for each number is from -100 to 100.
+
+## 4. Repeat for each test
+Continue entering the number of values and the values themselves until all tests have been completed.
+
+## 5. Get the results
+The program prints the result of each test separately.
+
+If the number of values entered does not match the number specified for that test, the result is:
+```
 -1
+```
+# Calculation Rules
+For every number:
 
-When you enter numbers, the program will ignore the positive numbers and raise the negative numbers to the fourth power. If there are multiple negative numbers, the program will add them to the total. 
+- Positive numbers are ignored.
 
+- Zero is ignored.
 
-This was a challenge for my algorithm skill. I applied because I wanted to test myself; I didn't want or expect to be hired by this company. I don't want this algorithm structure to disappear, even though they rejected me.
-I didn't use lists, tuples, dictionaries, global variables, or AI.
+- Negative numbers are raised to the fourth power.
+
+- If a test contains multiple negative numbers, their fourth powers are added together.
+
+### For example:
+```
+-98 97
+```
+### The calculation is:
+```
+(-98)^4 = 92236816
+97 → ignored
+```
+### Result:
+```
+92236816
+```
+### Another example:
+```
+99 45 -34 -76
+```
+### The calculation is:
+```
+99  → ignored
+45  → ignored
+(-34)^4 + (-76)^4
+```
+### Result:
+```
+34698512
+```
+### Example Input / Output
+Example input:
+```
+3
+2
+-98 97
+4
+99 45 -34 -76
+3
+86 54
+```
+Example output:
+```
+92236816
+34698512
+-1
+```
+The third test returns -1 because 3 numbers were expected, but only 2 numbers were provided.
+
+## Implementation Notes
+This challenge was intentionally implemented without using:
+
+- Lists
+
+- Tuples
+
+- Dictionaries
+
+- Global variables
+
+- for/while loop
+
+- Generative AI
+
+The goal was to solve the problem with different methods.
+
+## Why I Keep This Repository
+This project is not here because the application resulted in a job.
+
+I applied because I wanted to challenge myself and test my algorithm skills. The challenge was fun to solve, and I decided that the solution itself was worth keeping.
